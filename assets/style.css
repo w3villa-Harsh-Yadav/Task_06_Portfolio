@@ -160,13 +160,34 @@ ul{
     font-size: 20px;
 }
 /* Media Queries for About Section */
-@media screen and (max-width:1800px){
-    .About .container .About-content{
-        text-align: center;
-    }
+@media screen and (max-width:1400px){
     .About .container .About-content{
         flex-direction: column;
-    } 
+    }
+    .About .container .About-content .About-me .col div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .About .container .About-content .skill-set .skills div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .About .container .About-content .image{
+        text-align: center;
+    }
+}
+@media screen and (max-width:800px){
+    .About .container .About-content .image img{
+        height: 40vh;
+        width: 40vh;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .About .container .About-content{
+        text-align: center;
+        flex-direction: column;
+    }
     .About .container .About-content .About-me{
         flex-direction: column;
         font-size: 20px;
@@ -190,15 +211,6 @@ ul{
     .About .container .About-content .skill-set .skills div{
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-}
-@media screen and (max-width:900px){
-    .About .container .About-content .image img{
-        height: 40vh;
-        width: 40vh;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: top;
     }
 }
 
