@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --textcolor: white;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0px;
+}
+.container{
+    width: 80vw;
+    margin: auto;
+}
+.ptb{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.ptbs{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ml{
+    margin-left: 100px;
+}
+.mr{
+    margin-right: 100px;
+}
+.mrs{
+    margin-right: 10px;
+}
+.mls{
+    margin-left: 10px;
+}
+p{
+    font-weight: 300;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Home Classes */
+
+.Home{
+    background-image: url("https://images.pexels.com/photos/2131614/pexels-photo-2131614.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 100vh;
+}
+.Home .container .heading .logo{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.Home .container .heading .logo .sub{
+    font-size: small;
+    font-weight: lighter;
+}
+.Home .navigation-bar{
+    display: flex;
+    justify-content: center;
+}
+.Home .navigation-bar .list ul{
+    display: flex;
+    list-style-type: none;
+    padding-top: 10px;
+}
+.Home .navigation-bar .list ul li{
+    padding-right: 20px;
+}
+.Home .navigation-bar .list ul li a{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+.Home .title{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--textcolor);
+}
+.Home .title div{
+    font-size: 50px;
+}
+.Home .navigation-bar .dropdown{
+    display: none;
+}
+/* Media Quries of Home classes */
+@media screen and (max-width:860px){
+    .Home .navigation-bar{
+        justify-content: flex-start;
+    }
+    .Home .navigation-bar .list ul .symb{
+        display: none;
+    }
+    .Home .navigation-bar .list ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 90px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: 60%;
+        text-align: center;
+    }
+    .Home .navigation-bar .list ul li{
+        padding: 20px 0px;
+        padding-left: 0px;
+        border-bottom: 1px solid black;
+    }
+    .Home .navigation-bar .list ul li:last-child{
+        border: none;
+    }
+    .Home .navigation-bar .list ul.active{
+        display: flex;
+    }
+    .Home .navigation-bar .dropdown{
+        display: block;
+        background-color: inherit;
+    }
+}
+@media screen and (max-width:425px){
+    .Home .navigation-bar .list ul{
+        top: 3rem;
+        right: 3rem;
+    }
+}
+
+/* About classes */
+.About .container .About-content{
+    display: flex;
+    justify-content: space-around;
+} 
+.About .container .About-content .image img{
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+.About .container .About-content .About-me-details .about-heading{
+    font-weight: 500;
+    font-size: 30px;
+}
+.About .container .About-content .About-me{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.About .container .About-content .heading-skills{
+    font-weight: 500;
+    font-size: 30px;
+}
+.About .container .About-content .skill-set{ 
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+/* Media Queries for About Section */
+@media screen and (max-width:1800px){
+    .About .container .About-content{
+        text-align: center;
+    }
+    .About .container .About-content{
+        flex-direction: column;
+    } 
+    .About .container .About-content .About-me{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .About .container .About-content .About-me .col{
+        margin: 0px;
+    }
+    .About .container .About-content .About-me .col div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .About .container .About-content .About-me .col div span{
+        display: block;
+    }
+    .About .container .About-content .skill-set{
+        flex-direction: column;
+    }
+    .About .container .About-content .skill-set .skills{
+        margin: 0px;
+    }
+    .About .container .About-content .skill-set .skills div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width:900px){
+    .About .container .About-content .image img{
+        height: 40vh;
+        width: 40vh;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+/* Resume Section */
+.resume .container .section-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.resume .container .Resume-row{
+    display: flex;
+    justify-content: space-between;
+}
+.resume .container .Resume-row .col{
+    width: 100%;
+}
+.resume .container .Resume-row .col h3{
+    text-align: center;
+}
+.resume .container .Resume-row .col h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:1000px){
+    .resume .container .Resume-row{
+        flex-direction: column;
+    }
+    .resume .container .Resume-row .col{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .resume .container .Resume-row .col h4,h3{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1700px){
+    .resume .container .Resume-row .c-1{
+        margin-right: 20px ;
+    }
+    .resume .container .Resume-row .c-2{
+        margin-left: 20px;
+    }
+}
+/* Footer Section */
+.Footer{
+    background-image: url("https://media.istockphoto.com/id/1393986966/photo/box-podium-in-abstract-cream-color-composition-for-product-presentation.jpg?b=1&s=170667a&w=0&k=20&c=sxuFRDtXdMAbQmdhHGb9ryhgMmelweZB_tg2XReNJ9g=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+.Footer .container{
+    text-align: center;
+}
+.Footer .container span a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+
+/* Media Queries for Footer */
+@media screen and (max-width:700px){
+    .Footer .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Footer .container span{
+        margin: 0px;
+        padding: 0px;
+    }
+}
