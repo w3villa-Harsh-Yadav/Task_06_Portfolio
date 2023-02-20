@@ -15,10 +15,11 @@
 
 <body>
     <!-- Home Section -->
-    <section class="Home ptb" id="home">
+
+    <section class="Home" id="home">
         <div class="container">
             <header>
-                <nav class="navigation-bar">
+                <nav class="navigation-bar ptb">
                     <div class="list">
                         <ul id="li" class="">
                             <li><a href="#home">Home</a></li>
@@ -42,7 +43,9 @@
             </div>
         </div>
     </section>
+
     <!-- About Section -->
+
     <section class="About ptb" id="about">
         <div class="container">
             <div class="About-content">
@@ -57,7 +60,8 @@
                         <div class="About-me">
                             <div class="col mr">
                                 <div><span class="mrs">Name:</span>Harsh Yadav</div>
-                                <div><span class="mrs">Phone:</span>7820059893</div>
+                                <div><span class="mrs">Phone:</span><a href="tel:7820059893">7820059893</a>
+                                </div>
                                 <div><span class="mrs">City:</span>Meerut</div>
                             </div>
                             <div class="col ml">
@@ -65,7 +69,7 @@
                                 <div><span class="mrs">Degree:</span>Graduate</div>
                                 <div>
                                     <span class="mrs">Email:</span>
-                                    harshyadav78200@<br/>gmail.com
+                                    <a href="mailto:harshyadav78200@gmail.com">harshyadav78200@<br/>gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -78,29 +82,29 @@
                             <div class="skills">
                                 <div class="skill">
                                     <span>HTML:</span>
-                                    <span>Intermediate</span>
+                                    <span>&nbspIntermediate</span>
                                 </div>
                                 <div class="skill">
                                     <span>CSS:</span>
-                                    <span>Intermediate</span>
+                                    <span>&nbspIntermediate</span>
                                 </div>
                                 <div class="skill">
-                                    <span>JS:</span>
-                                    <span>Beginner</span>
+                                    <span>JavaScript:</span>
+                                    <span>&nbspBeginner</span>
                                 </div>
                             </div>
                             <div class="skills ml">
                                 <div class="skill">
                                     <span>Python:</span>
-                                    <span>Intermediate</span>
+                                    <span>&nbspIntermediate</span>
                                 </div>
                                 <div class="skill">
                                     <span>Machine Learning:</span>
-                                    <span>Beginner</span>
+                                    <span>&nbspBeginner</span>
                                 </div>
                                 <div class="skill">
                                     <span>Java:</span>
-                                    <span>Beginner</span>
+                                    <span>&nbspBeginner</span>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +113,9 @@
             </div>
         </div>
     </section>
+
     <!-- Resume Section -->
+
     <section id="resume" class="resume ptb">
         <div class="container">
             <div class="section-title">
@@ -129,7 +135,7 @@
                         <ul>
                             <li>Meerut,U.P</li>
                             <li>7820059893</li>
-                            <li>harshyadav78200@gmail.com</li>
+                            <li><a href="mailto:harshyadav78200@gmail.com">harshyadav78200@gmail.com</a></li>
                         </ul>
                         <p></p>
                     </div>
@@ -167,9 +173,8 @@
                     <h3 class="resume-title ptbs">Professional Experience</h3>
                     <div class="resume-item">
                         <h4>Machine Learning Intern</h4>
-                        <h5>06/2022 - 08/2022</h5>
+                        <h5>June'22 - Aug'22</h5>
                         <p><em> Feynn Labs Consultancy Services</em></p>
-                        <p></p>
                         <ul>
                             <li>My role is to work on AI in economy: Product/Service: Predictive Market Analysis, Market
                                 Analysis and Segmentation.</li>
@@ -178,8 +183,7 @@
                     <h3 class="resume-title ptbs">Projects</h3>
                     <div class="resume-item">
                         <h4>House Price Prediction</h4>
-                        <h5>07/22-08/22</h5>
-                        <p></p>
+                        <h5>Jul'22-Aug'22</h5>
                         <ul>
                             <li>House price prediction can help the developer determine the selling price of a house and
                                 can help the customer to arrange the right time to purchase a house. There are three
@@ -189,8 +193,7 @@
                             <li>Technologies used- HTML, CSS, Machine Learning</li>
                         </ul>
                         <h4>E-commerce Website</h4>
-                        <h5>07/22-08/22</h5>
-                        <p></p>
+                        <h5>Jul'22-Aug'22</h5>
                         <ul>
                             <li>
                                 This is a project with the objective to develop a basic website where a consumer is
@@ -204,7 +207,9 @@
             </div>
         </div>
     </section>
+
     <!-- Footer Section -->
+
     <footer id="contact" class="Footer ptb">
         <div class="container">
             <h3>Harsh Yadav</h3>
@@ -213,12 +218,13 @@
             <p>7820059893</p>
             <span class="ml"><a href="https://www.facebook.com/login"><i class="fa-brands fa-facebook"></i></a></span>
             <span class="ml mr"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></span>
-            <span class="mr"><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></span>
+            <span class="mr"><a href="https://github.com/w3villa-Harsh-Yadav"><i class="fa-brands fa-github"></i></a></span>
             <div class="copyright ptbs"> 
                 © Copyright <strong><span>Harsh Yadav</span></strong>. All Rights Reserved
             </div>
         </div>
     </footer>
+
     <script>
         function tap() {
             document.getElementById("li").classList.toggle("active")

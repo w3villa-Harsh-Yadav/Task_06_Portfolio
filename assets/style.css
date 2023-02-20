@@ -38,6 +38,10 @@ ul{
     margin: 0px;
     padding: 0px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
 /* Home Classes */
 
@@ -63,7 +67,6 @@ ul{
 .Home .navigation-bar .list ul{
     display: flex;
     list-style-type: none;
-    padding-top: 10px;
 }
 .Home .navigation-bar .list ul li{
     padding-right: 20px;
@@ -73,7 +76,7 @@ ul{
     color: var(--textcolor);
 }
 .Home .title{
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,20 +147,28 @@ ul{
 .About .container .About-content .About-me-details .about-heading{
     font-weight: 500;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 .About .container .About-content .About-me{
     display: flex;
     font-size: 20px;
     justify-content: space-between;
 }
+.About .container .About-content .About-me div span{
+    font-weight: 600;
+}
 .About .container .About-content .heading-skills{
     font-weight: 500;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 .About .container .About-content .skill-set{ 
     display: flex;
     justify-content: space-between;
     font-size: 20px;
+}
+.About .container .About-content .skills-content .skill-set .skills .skill :first-child{
+    font-weight: 600;
 }
 /* Media Queries for About Section */
 @media screen and (max-width:1400px){
@@ -213,7 +224,15 @@ ul{
         padding-bottom: 10px;
     }
 }
-
+@media screen and (max-width:425px){
+    .About .container .About-content .image img{
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
 /* Resume Section */
 .resume .container .section-title{
     text-align: center;
@@ -229,7 +248,8 @@ ul{
 .resume .container .Resume-row .col h3{
     text-align: center;
 }
-.resume .container .Resume-row .col h4{
+.resume .container .Resume-row .col h4,
+.resume .container .Resume-row .col h5{
     padding-top: 10px;
     padding-bottom: 10px;
 }
